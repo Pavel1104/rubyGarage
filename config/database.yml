@@ -28,14 +28,15 @@ development:
 test:
   <<: *default
   # database: db/test.sqlite3
-  database: myapp_test
+  database: test
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  # database: db/production.sqlite3
 
-  production:
-  <<: *default
-  database: todo_production
-  username: myapp
+  # production:
+  # <<: *default
+  # adapter: postgresql
+  database: production
+  # username: myapp
   password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
