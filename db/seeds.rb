@@ -13,16 +13,4 @@ end
 
 if Project.count === 0
   5.times { Project.create(name: 'Project ' + generate_number) }
-
-  project_ids = Project.pluck :id
-
-  15.times do
-    Task.create(
-      name: 'Task ' + generate_number,
-      isDone: false,
-      deadline: Time.new.strftime('%F'),
-      priority: rand(5),
-      project_id: project_ids[rand(project_ids.length)],
-    )
-  end
 end

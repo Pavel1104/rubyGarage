@@ -5,7 +5,6 @@ class Task < ApplicationRecord
             numericality: { only_integer: true, greater_than_or_equal_to: 0 }
   validates :name, presence: true
   validates :project, presence: true
-  # validates :project, absence: true
 
   validates :project_id,
             inclusion: {
