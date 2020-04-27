@@ -8,7 +8,7 @@
   margin: 0;
 }
 .add {
-  background: url('../../img/add-24px.svg');
+  background: asset-url('../../img/add-24px.svg');
   height: 24px;
   width: 24px;
   flex: none;
@@ -108,12 +108,12 @@ input[name='deadline']:focus,
 }
 
 .priorityUp {
-  background: url('../../img/arrow_drop_up-24px.svg');
+  background: asset-url('../../img/arrow_drop_up-24px.svg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 .priorityDown {
-  background: url('../../img/arrow_drop_down-24px.svg');
+  background: asset-url('../../img/arrow_drop_down-24px.svg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -155,7 +155,7 @@ input[name='deadline']:focus,
   display: block;
   width: 24px;
   height: 24px;
-  background: url('../../img/check-24px.svg');
+  background: asset-url('../../img/check-24px.svg');
   color: transparent;
   background-size: cover;
   background-repeat: no-repeat;
@@ -170,7 +170,7 @@ input[name='deadline']:focus,
   display: block;
   width: 24px;
   height: 24px;
-  background: url('../../img/edit-24px.svg');
+  background: asset-url('../../img/edit-24px.svg');
   color: transparent;
   background-size: cover;
   background-repeat: no-repeat;
@@ -184,7 +184,7 @@ input[name='deadline']:focus,
   display: block;
   width: 24px;
   height: 24px;
-  background: url('../../img/delete-24px.svg');
+  background: asset-url('../../img/delete-24px.svg');
   color: transparent;
   background-size: cover;
   background-repeat: no-repeat;
