@@ -10,8 +10,8 @@
 
 ### Installation
 ```bash
-git clone https://github.com/Pavel1104/...
-cd ...
+git clone https://github.com/Pavel1104/rubyGarage.git
+cd rubyGarage
 bundle install
 rake db:create
 rake db:migrate
@@ -37,19 +37,19 @@ I'​m a person who passionate about my own productivity. I want to manage my ta
 - [x] I want to be able to update/​​delete tasks
 - [x] I want to be able to prioritize tasks into a project
 - [x] I want to be able to choose deadline for my task
-- [s] I want to be able to mark a task as 'done'
+- [x] I want to be able to mark a task as 'done'
 
 ### Technical requirements
 - [x] 01.​ It should be a WEB application
-- [] 02.​ For the client side must be used: HTML, CSS (any libs as Twitter Boorstrap, Blueprint ...), JavaScript (any libs as jQuery, Prototype ...)
+- [x] 02.​ For the client side must be used: HTML, CSS (any libs as Twitter Boorstrap, Blueprint ...), JavaScript (any libs as jQuery, Prototype ...)
 - [x] 03.​ For a serverside any languageas Ruby,PHP,Python,JavaScript, C#, Java ...
-- [] 04.​ It should have a client side and server side validation
-- [] 05.​ It should look like on screens (see attached file “t​est-task-ruby-courses-view.png”).
+- [x] 04.​ It should have a client side and server side validation
+- [x] 05.​ It should look like on screens (see attached file “t​est-task-ruby-courses-view.png”).
 
 ### Additional requirements
-- [] It should work like one page WEB application and should use AJAX technology, load and submit data without reloading a page.
-- [?] It should have user authentication solution and a user should only have access to their own projects and tasks.
-- [-] It should have automated tests for the all functionality
+- [x] It should work like one page WEB application and should use AJAX technology, load and submit data without reloading a page.
+- [] It should have user authentication solution and a user should only have access to their own projects and tasks.
+- [] It should have automated tests for the all functionality
 
 ---
 

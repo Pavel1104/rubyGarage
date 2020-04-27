@@ -1,0 +1,34 @@
+.app {
+  display: flex;
+  margin: 9vh 5vw 0vh;
+  min-height: 88vh;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.header {
+  text-align: center;
+  h1,
+  h2 {
+    margin: 5px;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-weight: normal;
+  }
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+}
+
+.header,
+.main,
+.footer {
+  flex-shrink: 0;
+}

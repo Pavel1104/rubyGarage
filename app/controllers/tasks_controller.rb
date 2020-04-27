@@ -3,18 +3,21 @@ class TasksController < ApplicationController
   before_action :find_project, only: %i[index new create]
   before_action :get_project, only: %i[show edit update destroy]
 
-  # GET /tasks
-  # GET /tasks.json
+  # GET projects/:id/tasks
+  # GET projects/:id/tasks.json
   def index
     @tasks = @project.tasks
-    render'projects/show'
+    respond_to do |format|
+      format.html {render'projects/show'}
+      format.json
+    end
   end
 
   # GET /tasks/1
   # GET /tasks/1.json
   def show; end
 
-  # GET /tasks/new
+  # GET projects/:id/tasks/new
   def new
     # @task = Task.new
     @task = @project.tasks.new
@@ -23,8 +26,8 @@ class TasksController < ApplicationController
   # GET /tasks/1/edit
   def edit; end
 
-  # POST /tasks
-  # POST /tasks.json
+  # POST projects/:id/tasks
+  # POST projects/:id/tasks.json
   def create
     @task = Task.new(task_params)
 
@@ -90,7 +93,7 @@ class TasksController < ApplicationController
   end
 
   def find_project
-    @project = Project.find params[:project_id]
+    @project = Project.find (params[:project_id])
   end
 
   def get_project

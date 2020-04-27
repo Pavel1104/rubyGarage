@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  isDone: false
+  deadline: 2020-04-12
+  priority: 1
+  project: one
+
+two:
+  name: MyString
+  isDone: false
+  deadline: 2020-04-12
+  priority: 1
+  project: two
