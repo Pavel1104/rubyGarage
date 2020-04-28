@@ -6,7 +6,7 @@ class TasksController < ApplicationController
   # GET projects/:id/tasks
   # GET projects/:id/tasks.json
   def index
-    @tasks = @project.tasks
+    @tasks = @project.tasks.order(id: :asc)
     respond_to do |format|
       format.html {render'projects/show'}
       format.json
