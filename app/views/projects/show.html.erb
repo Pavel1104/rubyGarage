@@ -4,6 +4,10 @@
   <strong>Name:</strong>
   <%= @project.name %>
 </p>
+<p>
+  <strong>tasksOrder:</strong>
+  <%= @project.tasksOrder %>
+</p>
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
